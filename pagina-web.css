@@ -308,9 +308,57 @@ fdetalles .caja-contenedor .caja p{
     padding: 1rem 0;
 }
 
-
-
-
+/* PRECIOS */
+.precios .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.precios .caja-contenedor .caja{
+    flex: 1 1 28rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-block-end: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+}
+.precios .caja-contenedor .caja:nth-child(2),
+.precios .caja-contenedor .caja:hover{
+    border: .2rem solid var(--limon);
+}
+.precios .caja-contenedor .caja .titulo{
+    color: var(--verde);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.precios .caja-contenedor .caja .tipos{
+    font-size: 4rem;
+    color: var(--limon);
+    padding: 1rem 0;
+}
+.precios .caja-contenedor .caja .tipos span{
+    font-size: 2rem;
+    color: var(--limon);
+}
+.precios .caja-contenedor .caja ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+.precios .caja-contenedor .caja ul li{
+    font-size: 1.7rem;
+    color: #333;
+    padding: .5rem 0;
+}
+.precios .caja-contenedor .caja ul li .fa-check{
+    color: #90ee90;
+}
+.precios .caja-contenedor .caja ul li .fa-xmark{
+    color: #ff0000;
+}
 
 @media (max-width: 1200px) {
     html{
